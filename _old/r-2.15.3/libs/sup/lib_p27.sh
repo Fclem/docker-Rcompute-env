@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(NeatMap)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(network)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(nlme)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(nnet)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Nozzle.R1)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(np)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(nplplot)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(oompaBase)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(org.Hs.eg.db)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(orthopolynom)"

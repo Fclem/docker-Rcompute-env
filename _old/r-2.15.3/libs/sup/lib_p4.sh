@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(RColorBrewer)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Rcpp)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(RCurl)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(reshape)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(reshape2)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(RJSONIO)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(rPython)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(RSQLite)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(scales)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(scatterplot3d)"

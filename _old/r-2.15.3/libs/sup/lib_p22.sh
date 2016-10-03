@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(IST)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ISTcore)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ISTplots)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(iterators)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(itertools)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(its)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(KEGG.db)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(KernSmooth)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(knitr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(labdsv)"

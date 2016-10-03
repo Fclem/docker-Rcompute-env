@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(R.utils)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Rwave)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(sandwich)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(scales)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(scatterplot3d)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(SciViews)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(sem)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(sendmailR)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(seqinr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(sessionTools)"

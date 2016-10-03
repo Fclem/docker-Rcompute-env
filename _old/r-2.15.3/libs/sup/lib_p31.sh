@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(rcdklibs)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(RColorBrewer)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Rcpp)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(RcppArmadillo)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(RCurl)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(R.devices)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(rEMM)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(reshape)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(reshape2)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(R.filesets)"

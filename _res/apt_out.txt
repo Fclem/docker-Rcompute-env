@@ -1,0 +1,150 @@
+r-cran-dichromat - Color schemes for dichromats
+r-cran-digest - GNU R package for 'hash digest' of R data structures
+r-cran-gdata - GNU R package with data manipulation tools by Greg Warnes et al
+r-cran-ggplot2 - implementation of the Grammar of Graphics
+r-cran-gplots - GNU R package with tools for plotting data by Greg Warnes et al
+r-cran-gtable - Arrange grobs in tables
+r-cran-gtools - GNU R package with R programming tools by Greg Warnes et al
+r-cran-labeling - GNU R Axis Labeling optimization
+r-cran-mass - GNU R package of Venables and Ripley's MASS
+r-cran-munsell - Munsell colour system
+r-cran-plotrix - GNU R package providing various plotting functions
+r-cran-plyr - Tools for splitting, applying and combining data
+r-cran-proto - Prototype object-based programming
+r-cran-rcolorbrewer - GNU R package providing suitable color palettes
+r-cran-rcpp - GNU R package for Seamless R and C++ Integration
+r-cran-rcpparmadillo - GNU R package for Armadillo C++ linear algebra library
+r-cran-rcppeigen - GNU R package for Eigen templated linear algebra
+r-cran-rcurl - GNU R General network (HTTP/FTP/...) client interface
+r-cran-reshape - Flexibly reshape data
+r-cran-reshape2 - Flexibly reshape data: a reboot of the reshape package
+r-cran-reshape2 - Flexibly reshape data: a reboot of the reshape package
+r-cran-rsqlite - Database Interface R driver for SQLite
+r-cran-scales - Scale functions for graphics
+r-cran-scatterplot3d - GNU R package for Visualizing Multivariate Data
+r-cran-sp - GNU R classes and methods for spatial data
+r-cran-sparsem - GNU R package for basic linear algebra for sparse matrices
+r-cran-spatial - GNU R package for spatial statistics
+r-cran-spatstat - GNU R Spatial Point Pattern analysis, model-fitting, simulation, tests
+r-cran-spc - GNU R Statistical Process Control
+r-cran-stringr - Make it easier to work with strings
+r-cran-vcd - GNU R Visualizing Categorical Data
+r-cran-xml - GNU R package for XML parsing and generation
+r-cran-xtable - GNU R coerce data to LaTeX and HTML tables
+r-cran-abind - GNU R abind multi-dimensional array combination function
+r-cran-base64enc - GNU R package that provides tools for base64 encoding
+r-cran-base64enc - GNU R package that provides tools for base64 encoding
+r-cran-bitops - GNU R package implementing bitwise operations
+r-cran-boot - GNU R package for bootstrapping functions from Davison and Hinkley
+r-cran-cairodevice - GNU R Cairo/Gtk2 device driver package
+r-cran-car - GNU R Companion to Applied Regression by John Fox
+r-cran-catools - GNU R package providing various utility functions
+r-cran-chron - GNU R package for chronologically ordered objects
+r-cran-class - GNU R package for classification
+r-cran-cluster - GNU R package for cluster analysis by Rousseeuw et al
+r-cran-coda - Output analysis and diagnostics for MCMC simulations in R
+r-cran-codetools - GNU R package providing code analysis tools
+r-cran-colorspace - GNU R Color Space Manipulation
+r-cran-combinat - GNU R package with utilities for combinatorics
+r-cran-dbi - GNU R package providing a generic database interface
+r-cran-deal - Learning Bayesian Networks with Mixed Variables
+r-cran-dichromat - Color schemes for dichromats
+r-cran-digest - GNU R package for 'hash digest' of R data structures
+r-cran-dosnow - GNU R parallel excution backend for %dopar% using snow
+r-cran-effects - GNU R graphical and tabular effects display for glm models
+r-cran-epir - GNU R Functions for analysing epidemiological data
+r-cran-evaluate - GNU R parsing and evaluation tools
+r-cran-fastcluster - Fast hierarchical clustering routines for GNU R
+r-cran-fbasics - GNU R package for financial engineering -- fBasics
+r-cran-foreach - GNU R foreach looping support
+r-cran-foreign - GNU R package to read/write data from other stat. systems
+r-cran-formula - GNU R package for extended model formulas
+r-cran-gam - Generalized Additive Models for R
+r-cran-gdata - GNU R package with data manipulation tools by Greg Warnes et al
+r-cran-genabel - GNU R package for genome-wide SNP association analysis
+r-cran-genetics - GNU R package for population genetics
+r-cran-ggplot2 - implementation of the Grammar of Graphics
+r-cran-gmodels - GNU R package with tools for model fitting by Greg Warnes et al
+r-cran-gplots - GNU R package with tools for plotting data by Greg Warnes et al
+r-cran-gss - GNU R package for multivariate estimation using smoothing splines
+r-cran-gtable - Arrange grobs in tables
+r-cran-gtools - GNU R package with R programming tools by Greg Warnes et al
+r-cran-hmisc - GNU R miscellaneous functions by Frank Harrell
+r-cran-hwriter - HTML Writer - Outputs R objects in HTML format
+r-cran-iterators - GNU R iterator support for vectors, lists and other containers
+r-cran-its - GNU R package for handling irregular time series
+r-cran-kernsmooth - GNU R package for kernel smoothing and density estimation
+r-cran-labeling - GNU R Axis Labeling optimization
+r-cran-lattice - GNU R package for 'Trellis' graphics
+r-cran-latticeextra - GNU R package of additional graphical displays based on lattice
+r-cran-latticeextra - GNU R package of additional graphical displays based on lattice
+r-cran-lme4 - GNU R package for linear mixed effects model fitting
+r-cran-lmtest - GNU R package for diagnostic checking in linear models
+r-cran-maps - GNU R support for producing geographic maps
+r-cran-mass - GNU R package of Venables and Ripley's MASS
+r-cran-matrix - GNU R package of classes for dense and sparse matrices
+r-cran-memoise - Memoise functions
+r-cran-mgcv - GNU R package for multiple parameter smoothing estimation
+r-cran-minqa - GNU R package for quadratic optimisation without derivatives
+r-cran-misc3d - GNU R collection of 3d plot functions and rgl-based isosurfaces
+r-cran-minqa - GNU R package for quadratic optimisation without derivatives
+r-cran-multcomp - GNU R package for multiple comparison procedures
+r-cran-munsell - Munsell colour system
+r-cran-mvtnorm - GNU R package to compute multivariate Normal and T distributions
+r-cran-nlme - GNU R package for (non-)linear mixed effects models
+r-cran-nnet - GNU R package for feed-forward neural networks
+r-cran-permute - R functions for generating restricted permutations of data
+r-cran-plotrix - GNU R package providing various plotting functions
+r-cran-plyr - Tools for splitting, applying and combining data
+r-cran-proto - Prototype object-based programming
+r-cran-pscl - GNU R package for discrete data models
+r-cran-quadprog - GNU R package for solving quadratic programming problems
+r-cran-randomforest - GNU R package implementing the random forest classificator
+r-cran-rcolorbrewer - GNU R package providing suitable color palettes
+r-cran-rcpp - GNU R package for Seamless R and C++ Integration
+r-cran-rcpparmadillo - GNU R package for Armadillo C++ linear algebra library
+r-cran-rcppeigen - GNU R package for Eigen templated linear algebra
+r-cran-rcpparmadillo - GNU R package for Armadillo C++ linear algebra library
+r-cran-rcurl - GNU R General network (HTTP/FTP/...) client interface
+r-cran-reshape - Flexibly reshape data
+r-cran-reshape2 - Flexibly reshape data: a reboot of the reshape package
+r-cran-reshape2 - Flexibly reshape data: a reboot of the reshape package
+r-cran-rgl - GNU R package for three-dimensional visualisation using OpenGL
+r-cran-rglpk - GNU R interface to the GNU Linear Programing Kit
+r-cran-rjava - GNU R low-level interface to Java
+r-cran-rjson - GNU R package for converting between R and JSON objects
+r-cran-rms - GNU R regression modeling strategies by Frank Harrell
+r-cran-rmysql - GNU R package providing a DBI-compliant interface to MySQL
+r-cran-robustbase - GNU R package providing basic robust statistics
+r-cran-rocr - GNU R package to prepare and display ROC curves
+r-cran-rocr - GNU R package to prepare and display ROC curves
+r-cran-rpart - GNU R package for recursive partitioning and regression trees
+r-cran-rserve - GNU R Rserve tcp/ip server and sample clients
+r-cran-rsqlite - Database Interface R driver for SQLite
+r-cran-runit - GNU R package providing unit testing framework
+r-cran-sandwich - GNU R package for model-robust standard error estimates
+r-cran-scales - Scale functions for graphics
+r-cran-scatterplot3d - GNU R package for Visualizing Multivariate Data
+r-cran-slam - GNU R sparse lighweight arrays and matrices package
+r-cran-sm - GNU R package for kernel smoothing methods
+r-cran-snow - GNU R package for 'simple network of workstations'
+r-cran-sp - GNU R classes and methods for spatial data
+r-cran-sparsem - GNU R package for basic linear algebra for sparse matrices
+r-cran-spatial - GNU R package for spatial statistics
+r-cran-spatstat - GNU R Spatial Point Pattern analysis, model-fitting, simulation, tests
+r-cran-spc - GNU R Statistical Process Control
+r-cran-sparsem - GNU R package for basic linear algebra for sparse matrices
+r-cran-spatial - GNU R package for spatial statistics
+r-cran-stabledist - GNU R package for stable distribution functions
+r-cran-statmod - GNU R package providing various statistical modeling functions
+r-cran-stringr - Make it easier to work with strings
+r-cran-survival - GNU R package for survival analysis
+r-cran-th.data - GNU R package for datasets by Torsten Hothorn
+r-cran-timedate - GNU R package for financial engineering -- timeDate
+r-cran-timeseries - GNU R package for financial engineering -- timeSeries
+r-cran-urca - GNU R package providing unit root and cointegration tests
+r-cran-vcd - GNU R Visualizing Categorical Data
+r-cran-vegan - Community Ecology Package for R
+r-cran-xml - GNU R package for XML parsing and generation
+r-cran-xtable - GNU R coerce data to LaTeX and HTML tables
+r-cran-zoo - GNU R package for totally ordered indexed observations

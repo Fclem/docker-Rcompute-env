@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(labeling)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(lasso2)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(latentnet)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(lattice)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(latticeExtra)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(leaps)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(limma)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(lme4)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(lmtest)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(locfit)"

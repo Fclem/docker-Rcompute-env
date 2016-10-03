@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(grid)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gridExtra)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(GSEABase)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gsl)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gsmoothr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gss)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gtable)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(GTI)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gtools)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Heatplus)"

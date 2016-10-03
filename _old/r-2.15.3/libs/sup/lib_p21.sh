@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hopach)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hwriter)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(igraph)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(igraph0)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(illuminaHumanv3BeadID.db)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(illuminaHumanv3.db)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(impute)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ineq)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ipred)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(IRanges)"

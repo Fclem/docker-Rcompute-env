@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(pamr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(parallel)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(pastecs)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(pcaPP)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(permute)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(pixmap)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(plotrix)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(plyr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(png)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(polynom)"

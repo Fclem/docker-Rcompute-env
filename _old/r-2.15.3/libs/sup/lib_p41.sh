@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(VennDiagram)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(verification)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(vioplot)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(vsn)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(vttutil)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(waveslim)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(wordcloud)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(XLConnect)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(XLConnectJars)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(xlsx)"

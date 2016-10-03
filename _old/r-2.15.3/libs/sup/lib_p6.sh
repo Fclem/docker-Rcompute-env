@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(XLConnectJars)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(xlsx)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(xlsxjars)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(XML)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(xtable)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ABarray)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(abind)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(affxparser)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(affy)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(affydata)"

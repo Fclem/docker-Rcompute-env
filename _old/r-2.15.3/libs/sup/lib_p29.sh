@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(PreProcess)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(preprocessCore)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(princurve)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(prodlim)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(proto)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(proxy)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(PSCBS)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(pscl)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(quadprog)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(quantreg)"

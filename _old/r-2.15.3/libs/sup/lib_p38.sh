@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(statutils)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(stringr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(SuppDists)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(survcomp)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(survival)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(survivalROC)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(svDialogs)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(svGUI)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(svIDE)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(svKomodo)"

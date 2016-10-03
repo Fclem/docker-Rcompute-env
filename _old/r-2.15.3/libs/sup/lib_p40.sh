@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(timeDate)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(timeSeries)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(tools)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(tweedie)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(u133aaofav2cdf)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(urca)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(utils)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(vcd)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(vegan)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(venn)"

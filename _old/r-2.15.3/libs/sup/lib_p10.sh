@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(BiocGenerics)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(BiocInstaller)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(biomaRt)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Biostrings)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(bitops)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(biwt)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(boot)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(bootstrap)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(BSgenome)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Cairo)"

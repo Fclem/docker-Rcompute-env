@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(shiny)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(shinydashboard)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(sp)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(statutils)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(stringi)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(stringr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(vcd)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(venn)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(vttutil)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(XLConnect)"

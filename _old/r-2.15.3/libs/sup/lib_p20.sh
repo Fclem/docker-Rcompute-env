@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hgu133acdf)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hgu133ahsensgcdf)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hgu133aprobe)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hgu133plus2cdf)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hgu133plus2hsentrezgcdf)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hgu133plus2probe)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hgu95av2.db)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(highr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Hmisc)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(hmutil)"

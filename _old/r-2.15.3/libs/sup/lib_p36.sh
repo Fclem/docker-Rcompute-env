@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(sfit)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(shapes)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ShortRead)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(simpleaffy)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(slam)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(sm)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(sna)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(snow)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(snowfall)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(som)"

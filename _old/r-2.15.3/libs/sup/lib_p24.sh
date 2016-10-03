@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(magic)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(maps)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(markdown)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(marray)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(MASS)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Matrix)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(matrixcalc)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(matrixStats)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(MCMCglmm)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(MCRestimate)"

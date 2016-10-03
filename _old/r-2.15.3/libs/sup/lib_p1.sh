@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(dplyr)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gdata)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ggplot2)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ggvis)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(GO.db)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gplots)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gtable)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(GTI)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gtools)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Heatplus)"

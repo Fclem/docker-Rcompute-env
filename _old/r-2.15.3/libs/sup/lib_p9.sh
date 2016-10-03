@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ArrayTools)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(aws)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(awsMethods)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(base)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(base64enc)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(beadarray)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(BeadDataPackR)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(beeswarm)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(BiasedUrn)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(Biobase)"

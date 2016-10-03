@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(GlobalDeviance)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gmodels)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(GO.db)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(golubEsets)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(googleVis)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(goseq)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(gplots)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(graph)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(graphics)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(grDevices)"

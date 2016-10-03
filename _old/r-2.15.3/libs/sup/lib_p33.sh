@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(rmeta)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(R.methodsS3)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(rms)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(RMySQL)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(robustbase)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ROC)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ROCR)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(R.oo)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(ROracle)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(rpart)"

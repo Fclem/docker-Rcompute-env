@@ -1,0 +1,11 @@
+#!/bin/bash
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(affyio)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(affyPara)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(affyPLM)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(affyQCReport)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(akima)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(AlgDesign)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(alr3)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(amap)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(analogue)"
+R -q -e "source('/res/dyn_lib_load.R'); load_lib(annaffy)"
