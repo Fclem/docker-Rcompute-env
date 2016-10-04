@@ -1,4 +1,4 @@
-build_source=from-r2v12flat # CHANGE THIS to choose which Dockerfile to build from
+build_source=from-r2v13 # CHANGE THIS to choose which Dockerfile to build from
 rel_path=`dirname "${BASH_SOURCE}/"`/
 repo_name=fimm
 img_name=r2
