@@ -1,3 +1,4 @@
+build_source=from-r2v12flat # CHANGE THIS to choose which Dockerfile to build from
 rel_path=`dirname "${BASH_SOURCE}/"`/
 repo_name=fimm
 img_name=r2
@@ -9,6 +10,4 @@ then
 fi
 version=$(<$rel_path.version)
 img_full_name=$repo_name/$img_name:$tag$version
-
-
 

@@ -1,7 +1,7 @@
 source build_conf.sh
 
-DOCK_HOME=/breeze
-V_PATH=/home/cloud-user/docker/data
+# DOCK_HOME=/breeze
+# V_PATH=/home/cloud-user/docker/data
 
 END_C="\e[0m"
 RED="\e[91m"
