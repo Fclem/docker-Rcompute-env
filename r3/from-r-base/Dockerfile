@@ -48,5 +48,10 @@ RUN apt-get install -y --no-install-recommends \
 	r-cran-dosnow \
 	r-cran-scales
 
+# TODO compact this build
+
+RUN apt-get install -y --no-install-recommends \
+	libcurl4-openssl-dev
+
 ADD lib_list_new /res/
 RUN ["R", "-e", "source('/res/lib_installer.R'); packages('/res/lib_list_new')"]
