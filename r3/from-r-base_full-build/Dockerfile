@@ -44,3 +44,7 @@ RUN apt-get install -y --no-install-recommends \
 # install all the R libraries
 ADD lib_list_new /res/
 RUN ["R", "-e", "source('/res/lib_installer.R'); packages('/res/lib_list_new')"]
+
+#cache
+
+
