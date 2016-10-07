@@ -7,3 +7,4 @@ tag=v # this is the image tag prefix, which will be sufixed by an incremented ve
 build_source="Untitled Folder (3rd copy)" # changed 2016-10-05 12:11:07+03:00
 build_source="from-r-base" # changed 2016-10-05 12:13:28+03:00
 build_source="from-r-base_full-build" # changed 2016-10-05 17:31:34+00:00
+build_source="from-r-base" # changed 2016-10-07 14:43:40+00:00
