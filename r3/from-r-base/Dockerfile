@@ -2,27 +2,10 @@ FROM r-base:latest
 MAINTAINER "Clément Fiere" clement.fiere@helsinki.fi
 
 ###
-#	Additional Files
+#	IMAGE SPECIFIC
 ###
 
-# copy override file and folder structure form build context
-COPY fs_override/ /
-# Bash container starting script
-ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/run.sh /
-# R additional functions
-ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/res/dyn_lib_load.R /res/
-ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/res/lib_installer.R /res/
-# Python azure blob storage
-ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/azure_storage.py /res/
-ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/blob_storage_module.py /res/
-# pip installer
-ADD ttps://bootstrap.pypa.io/get-pip.py /res/
-
-###
-#	Image specific
-###
-
-#update packages
+# update packages
 RUN apt-get update && apt-get upgrade -y
 
 RUN apt-get install -y --no-install-recommends \
@@ -44,6 +27,9 @@ RUN apt-get install -y --no-install-recommends \
 
 # create a link for python (for some reason it doesn't exist in the base image)
 RUN ln /usr/bin/python2.7 /usr/bin/python
+
+# pip installer
+ADD https://bootstrap.pypa.io/get-pip.py /res/
 # download and install pip
 RUN python /res/get-pip.py && pip install --upgrade pip
 # install the only python packages required
@@ -61,7 +47,25 @@ RUN apt-get install -y --no-install-recommends \
 	r-cran-scales \
 	r-cran-rjson
 
-# install all remaining R libraries
+# custom R library installer
+ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/res/lib_installer.R /res/
+# list of libraries to install
 ADD lib_list /res/
+# install all remaining R libraries
 RUN ["R", "-e", "source('/res/lib_installer.R'); packages('/res/lib_list')"]
+
+###
+#	FILE SPECIFIC
+###
+
+# copy override file and folder structure form build context
+COPY fs_override/ /
+
+# Bash container starting script
+ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/run.sh /
+# R custom additional functions
+ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/res/dyn_lib_load.R /res/
+# Python azure blob storage
+ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/azure_storage.py /res/
+ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/blob_storage_module.py /res/
 
