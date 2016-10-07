@@ -47,4 +47,4 @@ RUN ["R", "-e", "source('/res/lib_installer.R'); packages('/res/lib_list_new')"]
 
 #cache
 
-
+RUN apt-get install -y --no-install-recommends r-cran-rjson
