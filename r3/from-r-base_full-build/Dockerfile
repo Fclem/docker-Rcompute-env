@@ -39,12 +39,10 @@ RUN apt-get install -y --no-install-recommends \
 	r-cran-dosnow \
 	r-cran-catools \
 	r-cran-dosnow \
-	r-cran-scales
+	r-cran-scales \
+	r-cran-rjson
 
 # install all the R libraries
 ADD lib_list_new /res/
 RUN ["R", "-e", "source('/res/lib_installer.R'); packages('/res/lib_list_new')"]
 
-#cache
-
-RUN apt-get install -y --no-install-recommends r-cran-rjson
