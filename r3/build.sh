@@ -6,6 +6,8 @@
 # displays FROM field from $build_source\Dockerfile
 source common.sh
 
+SECONDS=0
+
 ((version++))
 
 # subfolder list and count
@@ -127,3 +129,6 @@ docker build -t $repo_name/$img_name $build_source/ && echo ${version}>.version 
 	docker tag $repo_name/$img_name $img_full_name
 docker images $repo_name/$img_name
 
+duration=$SECONDS
+echo "DONE"
+echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
