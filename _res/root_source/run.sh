@@ -3,14 +3,15 @@
 # Place here any configuration required and call to the next script which should trigger the job.
 # The data folder is mounter under /breeze
 export RES_FOLDER='/res'
-export IN_FILE='in.tar.xz'			# file name to use for the input/job set archive
-export OUT_FILE='out.tar.xz'			# file name to use fot the output/result archive
+export AZURE_STORAGE_ACCOUNT='breezedata'	# Azure blob storage account name
+export IN_FILE='in.tar.xz'					# file name to use for the input/job set archive
+export OUT_FILE='out.tar.xz'				# file name to use fot the output/result archive
 export OUT_FILE_PATH=$HOME'/'$OUT_FILE		# path to the final archive to be created
-export NEXT_SH=$HOME'/run.sh' 			# path of the next file to run
-export JOB_ID=$1 				# Job id designate the file to be downloaded from Azure-storage
+export NEXT_SH=$HOME'/run.sh' 				# path of the next file to run
+export JOB_ID=$1 							# Job id designate the file to be downloaded from Azure-storage
 export AZURE_STORAGE_FN='azure_storage.py'	# name of the azure-storage python file
-export STORAGE_FN='blob_storage_module.py'
-export AZURE_KEY_FN='azure_pwd_breezedata'	# TODO change the last word to the name of the azure-storage account you wish to use
+export STORAGE_FN='blob_storage_module.py'	# name of the blob-storage interface module python file (for azure-storage)
+export AZURE_KEY_FN='.azure_pwd_'$AZURE_STORAGE_ACCOUNT'_secret'	# file in which to save the azure storage secret
 export AZURE_PY=$RES_FOLDER'/'$AZURE_STORAGE_FN	# full path of the azure-storage python interface
 RELEVANT_COMMIT='02646ed76e75a141d9ec671c68eab1a5439f48bb'
 # Url of the initial sotrage-module and azure-storage files (the specified version must support 'upgrade' action)
@@ -25,8 +26,11 @@ rm -fr $HOME/* > /dev/null 2>&1
 echo -e $BLUE'cd '$RES_FOLDER''$END_C
 cd $RES_FOLDER
 # copy the Azure access key from the externaly mounted shared folder
-echo -e $BLUE'cp '$DOCK_HOME'/'$AZURE_KEY_FN' '$RES_FOLDER'/'$END_C
-cp $DOCK_HOME'/'$AZURE_KEY_FN $RES_FOLDER'/'
+# echo -e $BLUE'cp '$DOCK_HOME'/'$AZURE_KEY_FN' '$RES_FOLDER'/'$END_C
+# cp $DOCK_HOME'/'$AZURE_KEY_FN $RES_FOLDER'/'
+# removed the above, removed embedding key into the container,
+# now the key is passed on by the docker client as the env variable AZURE_KEY
+echo $AZURE_KEY>$RES_FOLDER'/'$AZURE_KEY_FN # TODO implement into breeze
 # if the azure-storage python file is non-existant
 actualsize=$(wc -c <"$AZURE_STORAGE_FN") # get the size of the file, in case it is blank 
 if [ -z $actualsize ] || [ $actualsize -le 7000 ];
