@@ -4,10 +4,10 @@ gridExtra
 grid
 openxlsx
 gsubfn
-plotly
 d3heatmap
 drc
 minpack.lm
 xlsx
 Nozzle.R1
 base64
+viridis

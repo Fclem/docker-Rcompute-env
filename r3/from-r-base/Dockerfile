@@ -8,17 +8,17 @@ MAINTAINER "Clément Fiere" clement.fiere@helsinki.fi
 # update packages
 RUN apt-get update && apt-get upgrade -y
 
+# Python and open-ssl
 RUN apt-get install -y --no-install-recommends \
 	fish \
 	libpython2.7-minimal \
 	libpython2.7-stdlib \
-	python2.7-dev
-
-RUN apt-get install -y --no-install-recommends \
+	python2.7-dev \
 	libffi-dev \
 	libssl-dev \
 	libcurl4-openssl-dev
 
+# java
 RUN apt-get install -y --no-install-recommends \
 	openjdk-8-jdk \
 	openjdk-8-jre \
@@ -53,6 +53,8 @@ ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root
 ADD lib_list /res/
 # install all remaining R libraries
 RUN ["R", "-e", "source('/res/lib_installer.R'); packages('/res/lib_list')"]
+# specific version of plotly for compatibility purposes
+RUN ["R", "-e", "install.packages('https://cran.r-project.org/src/contrib/Archive/plotly/plotly_3.6.0.tar.gz', repos=NULL, type='source')"]
 
 ###
 #	FILE SPECIFIC
@@ -68,4 +70,6 @@ ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root
 # Python azure blob storage
 ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/azure_storage.py /res/
 ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/blob_storage_module.py /res/
+
+RUN chmod u+x /run.sh /res/azure_storage.py /res/blob_storage_module.py
 
