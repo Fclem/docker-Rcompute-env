@@ -47,6 +47,10 @@ RUN apt-get install -y --no-install-recommends \
 	r-cran-scales \
 	r-cran-rjson
 
+# clean up
+RUN apt-get -y autoclean && apt-get -y autoremove \
+	&& rm -fr /var/cache/apt/archives/*	/var/lib/apt/lists/*	/tmp/*	/var/tmp/*
+
 # custom R library installer
 ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/res/lib_installer.R /res/
 # list of libraries to install
@@ -61,7 +65,8 @@ RUN ["R", "-e", "install.packages('https://cran.r-project.org/src/contrib/Archiv
 ###
 
 # copy override file and folder structure form build context
-COPY fs_override/ /
+# disabled as nothing there ATM
+# COPY fs_override/ /
 
 # Bash container starting script
 ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/run.sh /
