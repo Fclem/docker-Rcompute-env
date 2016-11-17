@@ -45,7 +45,8 @@ RUN apt-get install -y --no-install-recommends \
 	r-cran-catools \
 	r-cran-dosnow \
 	r-cran-scales \
-	r-cran-rjson
+	r-cran-rjson \
+	r-cran-readxl
 
 # clean up
 RUN apt-get -y autoclean && apt-get -y autoremove \
