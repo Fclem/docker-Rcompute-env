@@ -46,11 +46,8 @@ RUN apt-get install -y --no-install-recommends \
 	r-cran-dosnow \
 	r-cran-scales \
 	r-cran-rjson \
-	r-cran-readxl
-
-# clean up
-RUN apt-get -y autoclean && apt-get -y autoremove \
-	&& rm -fr /var/cache/apt/archives/*	/var/lib/apt/lists/*	/tmp/*	/var/tmp/*
+	r-cran-readxl \
+	libmariadb-client-lgpl-dev
 
 # custom R library installer
 ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/res/lib_installer.R /res/
@@ -79,3 +76,6 @@ ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/blob_stor
 
 RUN chmod u+x /run.sh /res/azure_storage.py /res/blob_storage_module.py
 
+# clean up
+RUN apt-get -y autoclean && apt-get -y autoremove \
+	&& rm -fr /var/cache/apt/archives/*	/var/lib/apt/lists/*	/tmp/*	/var/tmp/*
