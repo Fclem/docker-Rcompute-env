@@ -13,3 +13,4 @@ base64
 viridis
 tidyr
 RMySQL
+data.table
