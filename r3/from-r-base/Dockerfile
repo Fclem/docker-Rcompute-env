@@ -72,6 +72,8 @@ ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root
 ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/res/dyn_lib_load.R /res/
 # git token
 ADD fs_override/.git_hub_token_secret /res/
+# required packages for the new bootstrap python script
+RUN pip install PyGithub plumbum
 # New container starting Python script
 ADD https://raw.githubusercontent.com/Fclem/py-sandbox/master/docker-bs/container-bootstrap.py /
 # makes both scripts executable (just in case if not already)
