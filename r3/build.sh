@@ -50,7 +50,7 @@ IFS=$OIFS
 
 # if there is more than 1 valid sub-folders
 if [ "$valid_folders_num" -ge "2" ]; then
-	echo -e "$BOLD$build_source$END_C is the current build source folder"
+	echo -e $GREEN"$BOLD$build_source$END_C$GREEN is the current default build source folder"$END_C
 	while true
 	do
 		# displays a list of available build source folder (has to contain Dockerfile)
