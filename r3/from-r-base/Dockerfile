@@ -66,6 +66,9 @@ RUN ["R", "-e", "install.packages('https://cran.r-project.org/src/contrib/Archiv
 # disabled as nothing there ATM
 # COPY fs_override/ /
 
+# required package for hubic storage
+RUN apt-get install -y --no-install-recommends python-swiftclient
+
 # *LEGACY* Bash container starting script
 ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/run.sh /
 # R custom additional functions
