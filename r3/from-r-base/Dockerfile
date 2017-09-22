@@ -76,9 +76,12 @@ ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root
 # git token
 ADD fs_override/.git_hub_token_secret /res/
 # required packages for the new bootstrap python script
-RUN pip install PyGithub plumbum
+# RUN pip install PyGithub plumbum
+RUN pip install PyGithub
 # New container starting Python script
 ADD https://raw.githubusercontent.com/Fclem/py-sandbox/master/docker-bs/container-bootstrap.py /
+ADD https://raw.githubusercontent.com/Fclem/isbio2/new_storage/isbio/storage/__init__.py /res/
+ADD https://raw.githubusercontent.com/Fclem/isbio2/new_storage/isbio/storage/storage_module_prototype.py /res/
 # makes both scripts executable (just in case if not already)
 RUN chmod u+x /run.sh /container-bootstrap.py
 # download the whole storage module folder from GitHub, so that the container already has basic storage features
