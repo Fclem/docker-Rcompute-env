@@ -79,6 +79,7 @@ ADD fs_override/.git_hub_token_secret /res/
 # RUN pip install PyGithub plumbum
 RUN pip install PyGithub
 # New container starting Python script
+ARG FORCE_REBUILD=unknown
 ADD https://raw.githubusercontent.com/Fclem/py-sandbox/master/docker-bs/container-bootstrap.py /
 ADD https://raw.githubusercontent.com/Fclem/isbio2/new_storage/isbio/storage/__init__.py /res/
 ADD https://raw.githubusercontent.com/Fclem/isbio2/new_storage/isbio/storage/storage_module_prototype.py /res/
