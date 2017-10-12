@@ -66,15 +66,27 @@ RUN ["R", "-e", "install.packages('https://cran.r-project.org/src/contrib/Archiv
 # disabled as nothing there ATM
 # COPY fs_override/ /
 
-# Bash container starting script
+# required package for hubic storage
+RUN apt-get install -y --no-install-recommends python-swiftclient
+
+# *LEGACY* Bash container starting script
 ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/run.sh /
 # R custom additional functions
 ADD https://raw.githubusercontent.com/Fclem/docker-Rcompute-env/master/_res/root_source/res/dyn_lib_load.R /res/
-# Python azure blob storage
-ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/azure_storage.py /res/
-ADD https://raw.githubusercontent.com/Fclem/isbio2/master/isbio/breeze/blob_storage_module.py /res/
-
-RUN chmod u+x /run.sh /res/azure_storage.py /res/blob_storage_module.py
+# git token
+ADD fs_override/.git_hub_token_secret /res/
+# required packages for the new bootstrap python script
+# RUN pip install PyGithub plumbum
+RUN pip install PyGithub
+# New container starting Python script
+ARG FORCE_REBUILD=unknown
+ADD https://raw.githubusercontent.com/Fclem/py-sandbox/master/docker-bs/container-bootstrap.py /
+ADD https://raw.githubusercontent.com/Fclem/isbio2/new_storage/isbio/storage/__init__.py /res/
+ADD https://raw.githubusercontent.com/Fclem/isbio2/new_storage/isbio/storage/storage_module_prototype.py /res/
+# makes both scripts executable (just in case if not already)
+RUN chmod u+x /run.sh /container-bootstrap.py
+# download the whole storage module folder from GitHub, so that the container already has basic storage features
+RUN /container-bootstrap.py git_download && rm /res/.git_hub_token_secret
 
 # clean up
 RUN apt-get -y autoclean && apt-get -y autoremove \

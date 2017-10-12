@@ -50,7 +50,7 @@ IFS=$OIFS
 
 # if there is more than 1 valid sub-folders
 if [ "$valid_folders_num" -ge "2" ]; then
-	echo -e "$BOLD$build_source$END_C is the current build source folder"
+	echo -e $GREEN"$BOLD$build_source$END_C$GREEN is the current default build source folder"$END_C
 	while true
 	do
 		# displays a list of available build source folder (has to contain Dockerfile)
@@ -126,7 +126,8 @@ echo -e "Source in Dockerfile is: $L_CYAN$BOLD$dock_from$END_C"
 
 # build and writes incremented build version on success
 docker build -t $repo_name/$img_name $build_source/ && echo ${version}>.version && \
-	docker tag $repo_name/$img_name $img_full_name
+	echo "docker tag $repo_name/$img_name:latest $img_full_name" && \
+	docker tag "$repo_name/$img_name:latest" $img_full_name
 docker images $repo_name/$img_name
 
 duration=$SECONDS
