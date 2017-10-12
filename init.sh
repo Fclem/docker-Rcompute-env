@@ -31,7 +31,7 @@ if getent group docker | grep &>/dev/null "\b${username}\b"; then
 else
 	print_and_do "sudo groupadd docker && sudo usermod -aG docker ${username}"
 	echo -e "${L_YELL}${username} added to group docker, please log in again, and run " \
-		"'${BOLD}cd dockerb && ./init${END_C}${L_YELL}'"${END_C}
+		"'${BOLD}cd docker && ./init.sh${END_C}${L_YELL}'"${END_C}
 	logout 2>/dev/null
 	exit
 fi

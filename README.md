@@ -21,7 +21,7 @@ source <(curl -L https://goo.gl/JMgctm)
 TODO finish
 If not logged-out, log-out and login again then
 ```console
-cd dockerb && ./init.sh
+cd docker && ./init.sh
 ```
 
 
