@@ -1,0 +1,8 @@
+.*/
+.*
+!.gitignore
+*.pem
+*.crt
+*.key
+*_secret
+*.log
