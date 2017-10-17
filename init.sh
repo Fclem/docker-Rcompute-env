@@ -2,6 +2,7 @@
 local_root_path=$(readlink -f $(dirname "$0"))
 source const.sh # IDE hack for var resolution
 source ${local_root_path}/const.sh
+source ${local_root_path}/r3/build_conf.sh
 
 
 # clem 10/08/2017
@@ -78,10 +79,23 @@ print_and_do "sudo service docker start"
 ### set fish as the default shell
 sudo chsh -s /usr/bin/fish ${username}
 sudo chsh -s /usr/bin/fish # also for root user
+
+if [ "" = "${repo_name}" ]; then
+	repo_name="fimm"
+fi
+if [ "" = "${img_name}" ]; then
+	img_name="r3"
+fi
+
 ### Get the DOCKER images
-echo -e ${L_CYAN}"Getting docker images ..."${END_C}
-print_and_do "docker pull $repo_name/$img_name"  && echo -e ${L_CYAN}"R3 image have been downloaded from dockerhub.
+echo -e ${L_CYAN}"Getting docker image ..."${END_C}
+print_and_do "docker pull ${repo_name}/${img_name}"  && echo -e ${L_CYAN}"R3 image have been downloaded from dockerhub.
 "${L_YELL}"You can also customize it and build it from ${BOLD}./r3/"${END_C}
+echo -e ${BOLD}"To Do :"${END_C}
+echo -e " _ Check that R3 image has been downloaded, otherwise : $ docker pull fimm/r3 ${END_C}"
+echo -e " _ Add the following at the end of line 'ExecStart' in ${BOLD}/lib/systemd/system/docker.service${END_C} :"
+echo " -s overlay -H tcp://[IP_ADDRESS]"
+echo "make sure to replace [IP_ADDRESS] by the ip address you want docker to listen on (the ip where breeze will be able to reach it, or 127.0.0.1, if using ssh)"
 ###
 #  DONE
 ###
